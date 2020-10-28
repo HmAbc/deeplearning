@@ -1,18 +1,18 @@
 #!/user/bin/env python3
 # -*- coding: utf-8 -*-
 
-import numpy
-from matplotlib import pyplot
+import numpy as np
+import matplotlib.pyplot as plt
 
-x = numpy.arange(0, 6, 0.1)
-y = numpy.sin(x)
-y2 = numpy.cos(x)
+x = np.arange(0, 6, 0.1)
+y1 = np.sin(x)
+y2 = np.cos(x)
 
 #绘制图形
-pyplot.plot(x, y, label='sin')
-pyplot.plot(x, y2, lable="cos")
-pyplot.xlabel('x')
-pyplot.ylabel('y')
-pyplot.title('sin&cos')
-pyplot.legend()
-pyplot.show()
+plt.plot(x, y1, label="sin")
+plt.plot(x, y2, linestyle = "--", label="cos")
+plt.xlabel("x")
+plt.ylabel("y")
+plt.title('sin & cos')
+plt.legend()
+plt.show()
