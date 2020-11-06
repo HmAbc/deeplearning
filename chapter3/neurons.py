@@ -34,3 +34,13 @@ Z2 = sigmoid(A2)
 
 print(A2)
 print(Z2)
+
+# 第二层到输出层的信号传递，输出层有两个输出
+def identity_function(x):
+    return x
+
+W3 = np.array([[0.1, 0.3], [0.2, 0.4]])
+B3 = np.array([0.1, 0.2])
+
+A3 = Z2 @ W3 + B3
+Z3 = identity_function(A3)
